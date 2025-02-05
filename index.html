@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Table</title>
+</head>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #141414;
+        color: white;
+    }
+    .top-bar {
+        background-color: #e50914;
+        padding: 15px 50px;
+        text-align: left;
+    }
+    .top-bar h1 {
+        margin: 0;
+        font-size: 2.5em;
+        color: white;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+    .price-card {
+        background-color: #333;
+        color: white;
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease;
+    }
+    .price-card:hover {
+        transform: scale(1.05);
+    }
+    .price-card h2 {
+        margin-top: 0;
+        font-size: 1.5em;
+        font-weight: 600;
+        color: #e50914;
+    }
+    .price-card h1 {
+        font-size: 2em;
+    }
+    .price-card ul {
+        list-style: none;
+        padding: 0;
+    }
+    .price-card li {
+        margin-bottom: 10px;
+        font-size: 1.1em;
+    }
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+        .price-card {
+            width: 90%;
+        }
+    }
+</style>
+<body>
+    <div class="top-bar">
+        <h1>NoodFlix</h1>
+    </div>
+    <div class="container">
+        <div class="price-card">
+            <h2>Basic</h2>
+            <h1>249 PHP/MONTH</h1>
+            <ul>
+                <li>Unlimited ad-free movies, TV shows, and mobile games</li>
+                <li>Watch on 1 supported device at a time</li>
+                <li>Watch in 720p (HD)</li>
+                <li>Download on 1 supported device at a time</li>
+            </ul>
+        </div>
+        <div class="price-card">
+            <h2>Standard</h2>
+            <h1>399 PHP/MONTH</h1>
+            <ul>
+                <li>Unlimited ad-free movies, TV shows, and mobile games</li>
+                <li>Watch on 2 supported devices at a time</li>
+                <li>Watch in 1080p (Full HD)</li>
+                <li>Option to add 1 extra member who doesn't live with you</li>
+                <li>Download on 2 supported devices at a time</li>
+            </ul>
+        </div>
+        <div class="price-card">
+            <h2>Premium</h2>
+            <h1>549 PHP/MONTH</h1>
+            <ul>
+                <li>Unlimited ad-free movies, TV shows, and mobile games</li>
+                <li>Watch on 4 supported devices at a time</li>
+                <li>Watch in 4K (Ultra HD) + HDR</li>
+                <li>Download on 6 supported devices at a time</li>
+                <li>Option to add up to 2 extra members who don't live with you</li>
+                <li>Spatial audio</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
